@@ -1,7 +1,5 @@
 import {Link, useNavigate} from "react-router-dom"
 
-
-const URL = process.env.REACT_APP_URL
 function Nav({total, isLoggedIn}) {
     const nav = useNavigate()
     const handleLogOut = () => {

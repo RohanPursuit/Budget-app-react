@@ -44,7 +44,7 @@ function EditTransaction({index}) {
         .then(response => {
             setTransaction(response.data)
         })
-    }, [])
+    }, [index, userKey])
 
     return (
         <form onSubmit={handleSubmit} action="">

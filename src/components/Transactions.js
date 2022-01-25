@@ -53,7 +53,7 @@ function Transactions({setTotal}) {
           }     
               
       });
-    }, [orderAndFilter])
+    }, [orderAndFilter, nav, setTotal, userKey])
     return (
         <div>
             <label htmlFor="filter-by">Filter: </label>

@@ -6,14 +6,12 @@ const URL = process.env.REACT_APP_URL
 
 function SignIn() {
     const nav = useNavigate()
-    console.log("SignIn")
     const [login , setUserInfo] = useState({
         userName: "john",
         password: "TheBeast69"
     })
 
     const handleChange = (event) => {
-        console.log(login, event.target.name)
         setUserInfo({...login, [event.target.name]: event.target.value})
     }
 

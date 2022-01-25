@@ -6,7 +6,6 @@ const URL = process.env.REACT_APP_URL
 
 function SignUp() {
     const nav = useNavigate()
-    console.log("SignUp")
     const [newUser, setNewUser] = useState({})
 
     const handleChange = (event) => {

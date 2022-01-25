@@ -19,7 +19,6 @@ function App() {
   const [total, setTotal] = useState(0)
   const [isLoggedIn, setLoggedIn] = useState(true)
 
-  console.log("App")
 
   useEffect(() => {   
     axios

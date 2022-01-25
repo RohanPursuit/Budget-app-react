@@ -6,7 +6,6 @@ const URL = process.env.REACT_APP_URL
 
 function Home({setLoggedIn, setTotal}) {
     const nav = useNavigate()
-    console.log("Home")
     //check if user is signed in **use document.cookie
     const userKey = document.cookie.split(';')[0].split('=')[1]
 

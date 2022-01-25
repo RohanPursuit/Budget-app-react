@@ -2,7 +2,6 @@ import SingleTransaction from "../components/SingleTransaction"
 import {useParams} from "react-router-dom"
 
 function ShowItem() {
-    console.log("ShowItem")
     const {index} = useParams()
     return (
         <div>

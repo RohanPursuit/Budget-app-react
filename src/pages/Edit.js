@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom"
 
 function Edit() {
     const {index} = useParams()
+    console.log("Edit")
     return (
         <div>
             <h2>Edit</h2>

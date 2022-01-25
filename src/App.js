@@ -19,6 +19,8 @@ function App() {
   const [total, setTotal] = useState(0)
   const [isLoggedIn, setLoggedIn] = useState(true)
 
+  console.log("App")
+
   useEffect(() => {   
     axios
     .get(`${URL}/budget`, {params: {userKey}})
@@ -34,7 +36,7 @@ function App() {
         
     })
     .catch(console.log)
-  })
+  }, [])
 
 
   return (

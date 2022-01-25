@@ -33,7 +33,7 @@ function SingleTransaction({index}) {
         .then(response => {
             setTransaction(response.data)
         })
-    })
+    }, [])
 
     return (
         <div>

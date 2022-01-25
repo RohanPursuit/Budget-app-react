@@ -6,7 +6,7 @@ const URL = process.env.REACT_APP_URL
 
 function EditTransaction({index}) {
     const nav = useNavigate()
-
+    console.log("EditTransaction")
     const userKey = document.cookie.split(';')[0].split("=")[1]
     const [transaction ,setTransaction] = useState({
         date: '',
@@ -44,7 +44,7 @@ function EditTransaction({index}) {
         .then(response => {
             setTransaction(response.data)
         })
-    })
+    }, [])
 
     return (
         <form onSubmit={handleSubmit} action="">

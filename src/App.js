@@ -36,7 +36,7 @@ function App() {
         
     })
     .catch(console.log)
-  }, [])
+  }, [nav, userKey])
 
 
   return (

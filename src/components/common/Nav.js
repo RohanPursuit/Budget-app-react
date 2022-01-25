@@ -4,7 +4,7 @@ function Nav({total, isLoggedIn}) {
     const nav = useNavigate()
     const handleLogOut = () => {
         document.cookie = "loginCred= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
-        nav('/')
+        nav('/signin')
     }
 
     return (

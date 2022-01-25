@@ -34,7 +34,7 @@ function App() {
         
     })
     .catch(console.log)
-  }, [total])
+  })
 
 
   return (

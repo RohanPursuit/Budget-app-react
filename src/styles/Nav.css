@@ -19,3 +19,8 @@
 .isZero {
 	color: white;
 }
+
+.Nav {
+	background-color: rgb(152, 192, 152);
+	height: 110px;
+}

@@ -9,6 +9,7 @@ function Transactions({setTotal}) {
     const userKey = document.cookie.split(';')[0].split("=")[1]
     const [transactions, setTransactions] = useState([])
 
+
     const [orderAndFilter, setOrderAndFilter] = useState({
         order: "asc",
         key: "date",
@@ -65,7 +66,7 @@ function Transactions({setTotal}) {
                     </tr>
                 </thead>
                 <tbody>
-                    {transactions.map((el, i) => 
+                    {transactions.map((el, i) =>
                     <tr key={i}>
                         <td>
                             {el.date}

@@ -17,7 +17,7 @@ function App() {
   const nav = useNavigate()
   const userKey = document.cookie.split(';')[0].split("=")[1]
   const [total, setTotal] = useState(0)
-  const [isLoggedIn, setLoggedIn] = useState(true)
+  const [isLoggedIn, setLoggedIn] = useState(false)
 
 
   useEffect(() => {   
@@ -39,11 +39,11 @@ function App() {
 
   return (
     <div className="App">
-      <Nav total={total} isLoggedIn={isLoggedIn}/>
+      <Nav total={total} isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} setTotal={setTotal}/>
       <Routes>
         <Route exact path="/" element={<Home setLoggedIn={setLoggedIn} setTotal={setTotal}/>}/>
         <Route path="/budget" element={<ShowAll setTotal={setTotal}/>}/>
-        <Route path="/signin" element={<SignIn/>}/>
+        <Route path="/signin" element={<SignIn setLoggedIn={setLoggedIn}/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/budget/new" element={<NewItem/>}/>
         <Route path="/budget/edit/:index" element={<Edit/>}/>

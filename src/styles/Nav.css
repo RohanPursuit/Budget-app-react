@@ -1,0 +1,9 @@
+.account-total {
+	color: rgb(231, 231, 231);
+	background-color: rgb(66, 66, 66);
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+}

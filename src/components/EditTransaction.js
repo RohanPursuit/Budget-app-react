@@ -48,48 +48,90 @@ function EditTransaction({index}) {
 
     return (
         <form onSubmit={handleSubmit} action="">
+            <table>
+                <thead>
 
-            <label htmlFor="date">Date: </label>
-            <input 
-            id="date" 
-            name="date" 
-            onChange={handleChange} 
-            value={transaction.date} 
-            type="text" />
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label htmlFor="date">Date: </label>
+                        </td>
+                        <td>
+                            <input 
+                            id="date" 
+                            name="date" 
+                            onChange={handleChange} 
+                            value={transaction.date} 
+                            type="text" />
+                        </td>
+                    </tr>
 
-            <label htmlFor="name">Name: </label>
-            <input 
-            id="name" 
-            name="name"
-            onChange={handleChange} 
-            value={transaction.name}  
-            type="text" />
+                    <tr>
+                        <td>
+                            <label htmlFor="name">Name: </label>
+                        </td>
+                        <td>
+                            <input 
+                            id="name" 
+                            name="name"
+                            onChange={handleChange} 
+                            value={transaction.name}  
+                            type="text" />
+                        </td>
+                    </tr>
 
-            <label htmlFor="source">Source: </label>
-            <input 
-            id="source" 
-            name="source"
-            onChange={handleChange} 
-            value={transaction.source}  
-            type="text" />
+                    <tr>
+                        <td> 
+                            <label htmlFor="source">Source: </label>
+                        </td>
+                        <td> 
+                            <input 
+                            id="source" 
+                            name="source"
+                            onChange={handleChange} 
+                            value={transaction.source}  
+                            type="text" />
+                        </td>
+                    </tr>
 
-            <label htmlFor="location">Location: </label>
-            <input 
-            id="location" 
-            name="location"
-            onChange={handleChange} 
-            value={transaction.location}  
-            type="text" />
+                    <tr>
+                        <td>
+                            <label htmlFor="location">Location: </label>
+                        </td> 
+                        <td>
+                            <input 
+                            id="location" 
+                            name="location"
+                            onChange={handleChange} 
+                            value={transaction.location}  
+                            type="text" />
+                        </td>
+                    </tr>
 
-            <label htmlFor="amount">Amount: </label>
-            <input 
-            id="amount" 
-            name="amount"
-            onChange={handleChange} 
-            value={transaction.amount}  
-            type="number" />
-
-            <input type="submit" />
+                    <tr>
+                        <td>
+                            <label htmlFor="amount">Amount: </label>
+                        </td>
+                        <td>
+                            <input 
+                            id="amount" 
+                            name="amount"
+                            onChange={handleChange} 
+                            value={transaction.amount}  
+                            type="number" />
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="submit" />  
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
 
     )

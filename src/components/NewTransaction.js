@@ -25,7 +25,7 @@ function NewTransaction() {
             userKey, transaction
         })
         .then(response => {
-            nav('/budget')
+            nav("/budget/show/0")
         })
     }
 

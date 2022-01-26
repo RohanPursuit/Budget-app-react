@@ -1,13 +1,20 @@
 import {Link, useNavigate} from "react-router-dom"
+import { useEffect } from "react"
 import "../../styles/Nav.css"
 
-function Nav({total, isLoggedIn}) {
+function Nav({total, isLoggedIn, setLoggedIn, setTotal}) {
     const nav = useNavigate()
 
     const handleLogOut = () => {
         document.cookie = "loginCred= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
         nav('/signin')
+        setLoggedIn(false)
+        setTotal(0)
     }
+
+    useEffect(() => {
+
+    }, [isLoggedIn, total])
 
     return (
         <div className="Nav">

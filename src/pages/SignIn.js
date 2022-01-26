@@ -8,7 +8,7 @@ function SignIn({setLoggedIn}) {
     const nav = useNavigate()
     const [login , setUserInfo] = useState({
         userName: "john",
-        password: "TheBeast69"
+        password: "TheDuckieBeast69"
     })
 
     const handleChange = (event) => {

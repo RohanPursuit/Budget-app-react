@@ -1,5 +1,15 @@
 table.app {
 	border-collapse: separate;
-	border-spacing: 1em;
-	font-size: 20px;
+	border-spacing: 1em 2em;
+	font-size: 15px;
+}
+
+table.app div {
+	border: 1px solid #000;
+}
+
+table,
+th,
+td {
+	text-align: center;
 }

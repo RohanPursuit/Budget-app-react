@@ -56,12 +56,12 @@ function Transactions({setTotal}) {
     }, [orderAndFilter, nav, setTotal, userKey])
     return (
         <div>
-            <label htmlFor="filter-by">Filter: </label>
+            {/* <label htmlFor="filter-by">Filter: </label>
             <select onChange={handleFilter} name="filterK" id="filter-by">
                 <option value="no filter">----</option>
                 <option value="date">Date</option>
                 <option value="source">Source</option>
-            </select>
+            </select> */}
             <table className="app">
                 <thead>
                     <tr>

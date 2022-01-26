@@ -38,3 +38,11 @@
 	font-family: fantasy;
 	font-weight: bold;
 }
+
+.logo {
+	position: absolute;
+	left: 20px;
+	top: -5px;
+	font-size: 90px;
+	text-decoration: none;
+}

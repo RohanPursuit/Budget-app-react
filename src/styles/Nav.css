@@ -46,3 +46,16 @@
 	font-size: 90px;
 	text-decoration: none;
 }
+
+.new-transaction {
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	color: black;
+	text-decoration: none;
+	font-family: fantasy;
+	font-weight: bold;
+	padding: 4px 10px 0px 10px;
+	background-color: transparent;
+	border: 1px solid #000;
+}

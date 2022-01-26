@@ -4,7 +4,7 @@ import {Link, useNavigate} from "react-router-dom"
 
 const URL = process.env.REACT_APP_URL
 
-function SignIn() {
+function SignIn({setLoggedIn}) {
     const nav = useNavigate()
     const [login , setUserInfo] = useState({
         userName: "john",
@@ -22,6 +22,7 @@ function SignIn() {
         .get(`${URL}/budget/user/signin`, {params: login})
         .then(response => {
             document.cookie = `loginCred=${response.data}; path=/`
+            setLoggedIn(true)
             //if credentials are valid set document.cookie and navigate back to home page
             // document.cookie = "userName=john"
         })

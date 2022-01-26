@@ -1,0 +1,12 @@
+.showall h2 {
+	position: relative;
+	top: 20px;
+	text-align: center;
+}
+
+table.app {
+	position: relative;
+	top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -28,9 +28,8 @@ function App() {
         setTotal(response.data.reduce((a, b) => {
           a = a.amount + b.amount
           return {amount: a}
-        }).amount) 
-      } else {
-        nav('/signin')
+          }).amount
+        ) 
       }
         
     })

@@ -18,12 +18,12 @@ function Transactions({setTotal}) {
         setOrderAndFilter({...orderAndFilter, order: orderAndFilter.order === "asc"? "desc" : "asc", key: event.target.name})
     }
 
-    const handleFilter = (event) => {
-      setOrderAndFilter({
-            ...orderAndFilter,
-            [event.target.name]: event.target.value
-      });
-    };
+    // const handleFilter = (event) => {
+    //   setOrderAndFilter({
+    //         ...orderAndFilter,
+    //         [event.target.name]: event.target.value
+    //   });
+    // };
 
     const handleDelete = (event) => {
         axios.delete(`${URL}/budget/${event.target.id}`, {params: {userKey}})
@@ -55,13 +55,6 @@ function Transactions({setTotal}) {
       });
     }, [orderAndFilter, nav, setTotal, userKey])
     return (
-        <div>
-            {/* <label htmlFor="filter-by">Filter: </label>
-            <select onChange={handleFilter} name="filterK" id="filter-by">
-                <option value="no filter">----</option>
-                <option value="date">Date</option>
-                <option value="source">Source</option>
-            </select> */}
             <table className="app">
                 <thead>
                     <tr>
@@ -73,7 +66,9 @@ function Transactions({setTotal}) {
                 <tbody>
                     {transactions.map((el, i) => 
                     <tr key={i}>
-                        <td>{el.date}</td>
+                        <td>
+                            {el.date}
+                        </td>
                         <td>
                             <Link to={"/budget/show/"+i} >
                                 {el.source}
@@ -92,7 +87,6 @@ function Transactions({setTotal}) {
                 )}
                 </tbody>
             </table>
-        </div>
       
     );
   }
